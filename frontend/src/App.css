@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Luckiest+Guy&family=Rubik+Marker+Hatch&display=swap');
+
 .App_body{
   position: absolute;
   background-color: black;
@@ -5,4 +7,56 @@
   width: 100%;
 }
 
+.home_page_title{
+    margin-top: 0px;
+    margin-left: 25px;
+    font-size: 600%;
+    color: white;
+    position: absolute;
+    font-family: 'Jua', sans-serif;
 
+}
+.category{
+    width: 650px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    right: 50px;
+    margin-top: 0px;
+    font-family: 'Jua', sans-serif;
+}
+.category_1{
+    color: white;
+}
+.category_1:hover {
+    cursor: pointer;
+    font-size: 35px;
+    color: #67DBA4;
+}
+
+.category_2{
+    color: white;
+}
+.category_2:hover {
+    cursor: pointer;
+    font-size: 35px;
+    color: #67DBA4;
+}
+
+.category_3{
+    color: white;
+}
+.category_3:hover {
+    cursor: pointer;
+    font-size: 35px;
+    color: #67DBA4;
+}
+
+.category_4{
+    color: white;
+}
+.category_4:hover {
+    cursor: pointer;
+    font-size: 35px;
+    color: #67DBA4;
+}
