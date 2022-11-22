@@ -1,24 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Jua&family=Luckiest+Guy&family=Rubik+Marker+Hatch&display=swap');
 
-.show{
-    position: absolute;
-    width: 100%;
-    height: 600px;
-    top:200px;
-    background-color: rgb(0, 0, 0);
-    display:grid;
-    place-items: center;
-}
-
-.big_circle{
-    position: relative;
-    top : 170px;
-    width: 300px;
-    height: 300px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 50%;
-    
-}
+/*애니메이션*/
 @keyframes change_color {
     from {
         background-color: #ffffff;
@@ -36,8 +18,34 @@
         opacity: 0.93;  
     }
 }
+@keyframes typing {
+    from {
+      width: 0
+    }
+}
 
-/*ME*/
+.show{
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    top:200px;
+    background-color: rgb(0, 0, 0);
+    display:grid;
+    place-items: center;
+}
+
+.big_circle{
+    position: relative;
+    top : 170px;
+    width: 300px;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    z-index: 2;
+}
+
+
+/*첫번째 원*/
 .circle_1{
     position: relative;
     width: 100px;
@@ -54,7 +62,23 @@
 .circle_1:hover + .zoom{
     background-color: #000000;
     visibility: visible;
-    animation: change_zoom 0.5s forwards;
+    animation: change_zoom 0.5s forwards;    
+}
+.text_1{
+    position: absolute;
+    width: 350px;
+    bottom:80%;
+    left : -11px;
+    font-size: 30px;
+    color: #67DBA4;
+    visibility: hidden;
+    font-family: 'Jua', sans-serif;
+}
+.circle_1:hover .text_1{
+    visibility: visible;
+    animation: typing 0.5s steps(70);
+    white-space: nowrap;
+    overflow: hidden;   
 }
 .circle_1_img{
     position: absolute;
@@ -63,14 +87,7 @@
     left:50%;
     top:50%;
     transform:translate(-50%, -50%);
-}
-.ME{
-    position: absolute;
-    font-family: 'Jua', sans-serif;
-    color: #44ff98;
-    font-size: 25px;
-    bottom : 570px;
-    right: 840px;
+    -webkit-user-drag: none;
 }
 
 .circle_2{
@@ -93,6 +110,21 @@
     opacity: 0.93;
     animation: change_zoom 0.5s forwards;
 }
+.text_2{
+    position: absolute;
+    left: 120%;
+    width: 350px;
+    font-size: 30px;
+    color: #67DBA4;
+    visibility: hidden;
+    font-family: 'Jua', sans-serif;
+}
+.circle_2:hover .text_2{
+    visibility: visible;
+    animation: typing 0.5s steps(70);
+    white-space: nowrap;
+    overflow: hidden;   
+}
 .circle_2_img{
     position: absolute;
     width: 70px;
@@ -100,6 +132,7 @@
     left:50%;
     top:50%;
     transform:translate(-50%, -50%);
+    -webkit-user-drag: none;
 }
 
 .circle_3{
@@ -122,6 +155,22 @@
     opacity: 0.93;
     animation: change_zoom 0.5s forwards;
 }
+.text_3{
+    position: absolute;
+    top:80%;
+    left: 28px;
+    width: 350px;
+    font-size: 30px;
+    color: #67DBA4;
+    visibility: hidden;
+    font-family: 'Jua', sans-serif;
+}
+.circle_3:hover .text_3{
+    visibility: visible;
+    animation: typing 0.5s steps(70);
+    white-space: nowrap;
+    overflow: hidden;   
+}
 .circle_3_img{
     position: absolute;
     width: 50px;
@@ -129,6 +178,7 @@
     left:50%;
     top:50%;
     transform:translate(-50%, -50%);
+    -webkit-user-drag: none;
 }
 
 .circle_4{
@@ -151,6 +201,22 @@
     opacity: 0.93;
     animation: change_zoom 0.5s forwards;
 }
+.text_4{
+    position: absolute;
+    top:80%;
+    left: -25px;
+    width: 350px;
+    font-size: 30px;
+    color: #67DBA4;
+    visibility: hidden;
+    font-family: 'Jua', sans-serif;
+}
+.circle_4:hover .text_4{
+    visibility: visible;
+    animation: typing 0.5s steps(70);
+    white-space: nowrap;
+    overflow: hidden;   
+}
 .circle_4_img{
     position: absolute;
     width: 70px;
@@ -158,6 +224,7 @@
     left:50%;
     top:50%;
     transform:translate(-50%, -50%);
+    -webkit-user-drag: none;
 }
 
 .circle_5{
@@ -180,6 +247,21 @@
     opacity: 0.93;
     animation: change_zoom 0.5s forwards;
 }
+.text_5{
+    position: absolute;
+    left: -140px;
+    width: 350px;
+    font-size: 30px;
+    color: #67DBA4;
+    visibility: hidden;
+    font-family: 'Jua', sans-serif;
+}
+.circle_5:hover .text_5{
+    visibility: visible;
+    animation: typing 0.5s steps(70);
+    white-space: nowrap;
+    overflow: hidden;   
+}
 .circle_5_img{
     position: absolute;
     width: 50px;
@@ -187,6 +269,7 @@
     left:50%;
     top:50%;
     transform:translate(-50%, -50%);
+    -webkit-user-drag: none;
 }
 
 .zoom{
