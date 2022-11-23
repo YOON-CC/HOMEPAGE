@@ -22,7 +22,7 @@ function App() {
 
             {/* 카테고리*/}
             <div className="category">
-                <h1 className="category_1" onClick={() => setPage(1)}>HOME</h1>
+                <h1 className="category_1" onClick={() => setPage(1)} >HOME</h1>
                 <h1 className="space"></h1>
                 <h1 className="category_2" onClick={() => setPage(2)}>ABOUT</h1>
                 <h1 className="space"></h1>
