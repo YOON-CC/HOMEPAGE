@@ -2,9 +2,15 @@
 
 .App_body{
   position: absolute;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   height: 100%;
   width: 100%;
+}
+.home_header{
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    height: 120px;
+    width: 100%;
 }
 
 .home_page_title{
